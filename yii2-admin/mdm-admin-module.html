@@ -79,7 +79,8 @@
     <p><strong>GUI manager for RBAC.</strong></p>
     <p>Use <a href="http://www.yiiframework.com/doc-2.0/yii-base-module.html#$controllerMap-detail">yii\base\Module::$controllerMap</a> to change property of controller.
 To change listed menu, use property <a href="mdm-admin-module.html#$menus-detail">$menus</a>.</p>
-<pre><code>'controllerMap' =&gt; [
+<pre><code>'layout' =&gt; 'left-menu', // default null mean use application layout.
+'controllerMap' =&gt; [
     'assignment' =&gt; [
         'class' =&gt; 'mdm\admin\controllers\AssignmentController',
         'userClassName' =&gt; 'app\models\User',
